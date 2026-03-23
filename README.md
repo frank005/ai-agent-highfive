@@ -67,8 +67,6 @@ cp -r skills/high-five ~/.agents/skills/high-five
 Once installed, the agent will:
 
 - Respond with ASCII art high fives and a celebration message
-- Track your lifetime high-five count in `~/.highfive/count.json`
-- Break down stats by AI (which agent gave you the most high fives?)
 - Proactively offer a high five after doing something impressive
 
 ## License

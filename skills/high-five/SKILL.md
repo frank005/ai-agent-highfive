@@ -40,8 +40,6 @@ If they decline, no worries — move on.
 1. Pick a random hand style from the list below.
 2. Print the ASCII art.
 3. Add a short, enthusiastic celebration message.
-4. Increment the high-five counter file (see below).
-5. Report the running total.
 
 ## ASCII Art Hands (pick one at random each time)
 
@@ -105,40 +103,9 @@ Pick one at random (or make up a new one in the same spirit):
 - "If that high five were code, it'd ship to prod on the first try."
 - "That high five just mass-assigned to main. No review needed."
 
-## High-Five Counter
-
-Track lifetime high fives in `~/.highfive/count.json`:
-
-```json
-{
-  "total": 42,
-  "by_ai": {
-    "cursor": 10,
-    "claude": 8,
-    "chatgpt": 7,
-    "gemini": 6,
-    "copilot": 5,
-    "grok": 3,
-    "perplexity": 3
-  },
-  "last": "2026-03-23T14:00:00Z"
-}
-```
-
-**Rules:**
-- Create `~/.highfive/` and `count.json` if they don't exist.
-- Identify yourself (which AI you are) and increment your own counter in `by_ai`.
-  - Cursor agent → `"cursor"`
-  - Claude CLI → `"claude"`
-  - Codex CLI → `"chatgpt"`
-  - Other / unknown → `"other"`
-- Always increment `total`.
-- Update `last` to the current ISO timestamp.
-- After updating, tell the user their running total: "That's high five #N!"
-
 ## Web App
 
-There's a companion web app you can try at:
+There's a companion web app at:
 
 **https://frank005.github.io/ai-agent-highfive/**
 
